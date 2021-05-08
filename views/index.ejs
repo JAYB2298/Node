@@ -1,0 +1,45 @@
+
+<!--include header-->
+
+<%-include('include/_header')%>
+
+<!--include header-->
+<!--Main-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-task" class="border-shadow">
+                <span class="text-gradient">New Task <i class="fa fa-tasks" aria-hidden="true"></i></span>
+            </a>
+        </div>
+        
+        <!--form handling-->
+        <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Task</th>
+                    <th>Sub Task</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Action</th>    
+                </tr>
+            </thead>
+            <tbody>
+                <%-include('include/_show')%>
+            </tbody>
+        </table>
+    </form>
+        
+        <!--form handling-->
+
+    </div>
+</main>
+
+<!--Main-->
+<!--include footer-->
+
+<%-include('include/_footer')%>
+
+<!--include footer-->

@@ -1,0 +1,56 @@
+
+ <!--Main-->
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i> All Task</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Task</h2>
+            <span class="text-light">Use the below to update task </span>
+        </div>
+        
+        <!--add user form-->
+        <!--form handling-->
+<form  method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="task" class="text-light">Enter Task</label>
+            <input type="hidden" name="id" value=" <%= tasks._id%>">
+            <input type="text" name="task" value="<%= tasks._task%>">  
+        </div>
+        <div class="form-group">
+            <label for="subTask" class="text-light">Enter Sub Task</label>
+            <input type="text" name="subTask" value="<%= tasks._subTask %>">  
+        </div>
+        <div class="form-group">
+            <label for="date" class="text-light">Enter Date</label>
+            <input type="date" name="date" value="<%= tasks._date%>">  
+        </div>
+        <div class="form-group">
+            <label for="time" class="text-light">Enter Time</label>
+            <input type="time" name="time" value="<%= tasks._time %>">  
+        </div> 
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Add</button>
+        </div>
+    </div>
+</form>
+
+<!--form handling-->
+         
+
+    </div>
+</main>
+
+<!--Main-->
+
+
+
+<!--include footer-->
+
+<%-include('include/_footer')%>
+
+<!--include footer-->

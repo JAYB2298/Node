@@ -1,0 +1,17 @@
+  
+<% for(var i = 0; i < tasks.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= tasks[i].task %></td>
+    <td><%= tasks[i].subTask %></td>
+    <td><%= tasks[i].date%></td>
+    <td><%= tasks[i].time %></td>
+    <td>
+        <a href="/update-task" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>

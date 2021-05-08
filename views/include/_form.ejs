@@ -1,0 +1,27 @@
+<!--form handling-->
+<form  action="/api/tasks" method="POST" id="add_task">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="task" class="text-light">Enter Task</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="task" value="">  
+        </div>
+        <div class="form-group">
+            <label for="subTask" class="text-light">Enter Sub Task</label>
+            <input type="text" name="subTask" value="">  
+        </div>
+        <div class="form-group">
+            <label for="date" class="text-light">Enter Date</label>
+            <input type="date" name="date" value="">  
+        </div>
+        <div class="form-group">
+            <label for="time" class="text-light">Enter Time</label>
+            <input type="time" name="time" value="">  
+        </div> 
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Add</button>
+        </div>
+    </div>
+</form>
+
+<!--form handling-->
