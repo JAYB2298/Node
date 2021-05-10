@@ -4,15 +4,15 @@ const route = express.Router()
 const services = require('../services/render');
 const controller = require('../controller/controller');
 
-/*
+/** 
  *  @description Root Route
  *  @method GET 
  */
 route.get('/', services.homeRoutes);
 
 /*
- *  @description add users
- *  @method GET /add-user
+ *  @description add task
+ *  @method GET /add-task
  */
 route.get('/add-task', services.add_task)
 
